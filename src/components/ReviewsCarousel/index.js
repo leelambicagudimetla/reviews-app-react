@@ -40,11 +40,11 @@ class ReviewsCarousel extends Component {
               data-testid="leftArrow"
               type="button"
               className="button-icon"
+              onClick={this.beforePage}
             >
               <img
                 src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png"
                 alt="left arrow"
-                onClick={this.beforePage}
               />{' '}
             </button>
             <div className="middle-div">
@@ -57,12 +57,12 @@ class ReviewsCarousel extends Component {
               data-testid="rightArrow"
               type="button"
               className="button-icon"
+              onClick={this.afterPage}
             >
               {' '}
               <img
                 src="https://assets.ccbp.in/frontend/react-js/right-arrow-img.png"
                 alt="right arrow"
-                onClick={this.afterPage}
               />{' '}
             </button>
           </div>
